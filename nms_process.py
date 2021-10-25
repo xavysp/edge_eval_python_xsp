@@ -25,6 +25,9 @@ def nms_process_one_image(image, save_path=None, save=True):
     :param save: bool, if True, save .png
     :return: edge
     NOTE: in MATLAB, uint8(x) means round(x).astype(uint8) in numpy
+    edgesNmsMex(tmp_edge,O,1,5,1.03,8);
+    previously r=1 s = 5, m=1.01,
+    for BIPED r=1, s=5, m=1.03,
     """
 
     if save and save_path is not None:

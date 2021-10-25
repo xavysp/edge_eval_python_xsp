@@ -14,6 +14,7 @@ def eval_edge(alg, model_name_list, result_dir, gt_dir, workers=1):
         res_dir = os.path.join(result_dir, model_name)
         print(res_dir)
         edges_eval_dir(res_dir, gt_dir, thin=1, max_dist=0.0075, workers=workers)
+        # edgesNmsMex(tmp_edge,O,1,5,1.03,8);
         toc = time.time()
         print("TIME: {}s".format(toc - tic))
         edges_eval_plot(res_dir, alg)
